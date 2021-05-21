@@ -59,10 +59,10 @@ fun main() {
 
 ```
 /resources
-	/assets
-		/languages
-			list.json
-			en-US.json
+  /assets
+    /languages
+      list.json
+      en-US.json
 ```
 
 ---
