@@ -33,7 +33,7 @@ dependencies {
 ## 🚀 Usage
 
 ```kotlin
-import kokusaika.Kokusaika
+import Kokusaika
 import kotlinx.serialization.json.Json
 import java.util.*
 

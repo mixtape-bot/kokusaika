@@ -3,7 +3,6 @@ package kokusaika.util
 import kokusaika.Kokusaika
 import kokusaika.KokusaikaBuilder
 import kotlinx.serialization.ExperimentalSerializationApi
-import kotlinx.serialization.StringFormat
 import kotlinx.serialization.json.Json
 import java.util.*
 import kotlin.contracts.ExperimentalContracts
