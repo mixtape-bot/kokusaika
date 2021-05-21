@@ -4,7 +4,7 @@
 
 ## 🚧 Installation
 
-You must install a kotlinx.serialization format, 国際化 was originally made for JSON. Although it has been modified to support any format.
+[comment]: <> (You must install a kotlinx.serialization format. 国際化 was originally made for JSON, although it may be able to support others in the future.)
 
 ###### Groovy	
 
