@@ -67,4 +67,4 @@ fun main() {
 
 ---
 
-Copyright &copy mixtape bot 2019 - 2021 all rights reserved
+Copyright &copy; mixtape bot 2019 - 2021 all rights reserved
