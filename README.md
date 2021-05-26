@@ -10,11 +10,11 @@
 
 ```groovy
 repositories {
-  maven { url "https://jitpack.io" }
+  maven { url "https://dimensional.jfrog.io/artifactory/maven" }
 }
 
 dependencies {
-  implementation "com.github.mixtape-bot:kokusaika:1.0.0"
+  implementation "gg.mixtape:kokusaika:1.0.0"
 }
 ```
 
@@ -22,18 +22,21 @@ dependencies {
 
 ```kotlin
 repositories {
-  maven("https://jitpack.io")
+  maven {
+    name = "dimensional.fun"
+    url = uri("https://dimensional.jfrog.io/artifactory/maven")
+  }
 }
 
 dependencies {
-  implementation("com.github.mixtape-bot:kokusaika:1.0.0")
+  implementation("gg.mixtape:kokusaika:1.0.0")
 }
 ```
 
 ## 🚀 Usage
 
 ```kotlin
-import Kokusaika
+import kokusaika.Kokusaika
 import kotlinx.serialization.json.Json
 import java.util.*
 
