@@ -3,12 +3,12 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
   `maven-publish`
 
-  kotlin("jvm") version "1.5.10"
-  kotlin("plugin.serialization") version "1.5.0"
+  kotlin("jvm") version "1.5.30"
+  kotlin("plugin.serialization") version "1.5.30"
 }
 
 group = "gg.mixtape"
-version = "1.0.0"
+version = "1.0.1"
 val archivesBaseName = "kokusaika"
 
 /* dependencies */
@@ -23,16 +23,16 @@ dependencies {
   implementation(kotlin("reflect"))
 
   /* kotlin serialization */
-  api("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.1")
+  api("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2")
   
   /* logging */
-  api("org.slf4j:slf4j-api:1.7.30")
+  api("org.slf4j:slf4j-api:1.7.32")
 }
 
 /* jfrog bullshit */
-val sourcesJar = task<Jar>("sourcesJar") {
+val sourcesJar by tasks.registering(Jar::class) {
   archiveClassifier.set("sources")
-  from(sourceSets["main"].allJava)
+  from(sourceSets["main"].allSource)
 }
 
 publishing {
@@ -55,14 +55,14 @@ publishing {
       version = project.version as String
       artifactId = archivesBaseName
 
-      artifact(sourcesJar)
+//      artifact(sourcesJar)
     }
   }
 }
 
 tasks.build {
   dependsOn(tasks.jar)
-  dependsOn(sourcesJar)
+//  dependsOn(sourcesJar)
 }
 
 tasks.publish {
