@@ -1,12 +1,13 @@
 # Kokusai-ka
 
-国際化 (Kokusai-ka "internationalization") is a simple kotlin internationalization library that makes use of [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) and Java's Locale class.
+国際化 (Kokusai-ka "internationalization") is a simple kotlin internationalization library that makes use
+of [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) and Java's Locale class.
 
 ## 🚧 Installation
 
 [comment]: <> (You must install a kotlinx.serialization format. 国際化 was originally made for JSON, although it may be able to support others in the future.)
 
-###### Groovy	
+###### Groovy
 
 ```groovy
 repositories {
